@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3D Model Step Viewer</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div id="ui">
+    <div class="panel">
+      <h1 id="stepTitle">Loading...</h1>
+      <p id="stepDescription">Please wait while the model loads.</p>
+
+      <div class="buttons">
+        <button id="prevBtn">Previous</button>
+        <button id="nextBtn">Next</button>
+        <button id="copyViewBtn">Copy View</button>
+      </div>
+
+      <div id="stepButtons" class="step-buttons"></div>
+    </div>
+  </div>
+
+  <canvas id="scene"></canvas>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
